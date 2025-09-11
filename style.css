@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    background: #f5f7fa;
+    font-family: '微软雅黑', Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+
+.password-group {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.password-card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s;
+}
+
+.password-card:hover {
+    transform: translateY(-2px);
+}
+
+.password-card h2 {
+    color: #34495e;
+    margin: 0 0 20px 0;
+    font-size: 20px;
+}
+
+.password-value {
+    font-size: 32px;
+    color: #e74c3c;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Courier New', monospace; /* 等宽字体更清晰 */
+}
+
+.update-info {
+    color: #7f8c8d;
+    font-size: 16px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    display: inline-block;
+}
