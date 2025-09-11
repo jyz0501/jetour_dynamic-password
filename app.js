@@ -17,6 +17,7 @@ function updatePasswords() {
     const month = formatTimeUnit(now.getMonth() + 1); // 月份（0-11 → 1-12 → 补零后01-12）
     const date = formatTimeUnit(now.getDate());       // 日期（1-31 → 补零后01-31）
     const hours = formatTimeUnit(now.getHours());     // 小时（0-23 → 补零后00-23）
+    const minutes = formatTimeUnit(now.getMinutes()); // 分钟（0-59 → 补零后00-59）
 
     // 组合日期时间字符串（格式：MMDDHH，如090921表示9月9日21时）
     const dateTimeKey = `${month}${date}${hours}`;
@@ -34,7 +35,7 @@ function updatePasswords() {
     document.getElementById('adbPassword').textContent = adbPassword;
     document.getElementById('carPassword').textContent = carPassword;
     document.getElementById('updateTime').textContent = 
-        `${now.getFullYear()}-${month}-${date} ${hours}:--`; // 分钟固定显示为--
+        `${now.getFullYear()}-${month}-${date} ${hours}:${minutes}`; // 显示真实分钟
 }
 
 // 页面加载后立即计算一次
