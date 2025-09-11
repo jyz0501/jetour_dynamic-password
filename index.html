@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设备动态密码</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>设备动态密码（实时更新）</h1>
+        
+        <div class="password-group">
+            <div class="password-card">
+                <h2>ADB权限密码</h2>
+                <div class="password-value" id="adbPassword">--</div>
+            </div>
+            
+            <div class="password-card">
+                <h2>车机动态密码</h2>
+                <div class="password-value" id="carPassword">--</div>
+            </div>
+        </div>
+
+        <div class="update-info">
+            最后更新时间：<span id="updateTime">--</span>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
