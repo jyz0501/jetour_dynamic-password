@@ -29,7 +29,7 @@ function updatePasswords() {
 
     // 计算车机动态密码（ADB密码 - 当前小时数）
     const carFull = adbFull - now.getHours();
-    const carPassword = (carFull % 1000000).toString().padStart(6, '0');  // 取最后六位+补零
+    const carPassword = `*#`+ (carFull % 1000000).toString().padStart(6, '0')+`#*`;  // 取最后六位+补零
 
     // 更新页面显示
     document.getElementById('adbPassword').textContent = adbPassword;
