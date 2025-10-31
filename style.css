@@ -27,6 +27,7 @@ h1 {
     color: #2c3e50;
     margin-bottom: 40px;
     font-size: 24px;
+    text-align: center;
 }
 
 .password-group {
@@ -52,11 +53,13 @@ h1 {
     color: #34495e;
     margin: 0 0 20px 0;
     font-size: 20px;
+    text-align: center;
 }
 
 .password-value {
     font-size: 32px;
     color: #e74c3c;
+    text-align: center;
     font-weight: bold;
     letter-spacing: 2px;
     font-family: 'DS-DIGI ITC', monospace; 
