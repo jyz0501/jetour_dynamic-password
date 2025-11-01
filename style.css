@@ -65,9 +65,7 @@ h1 {
     color: #666;
     padding-left: 20px;
 }
-.update-info notes {
-    margin-top: 5px;
+#notes {
     font-size: 0.9em;
     color:  #e74c3c;
-    padding-left: 20px;
 }
