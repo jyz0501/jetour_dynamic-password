@@ -4,3 +4,4 @@
 
 Demo：
 https://jyz0501.github.io/jetour_dynamic-password/
+https://vercel.com/jyz-0501s-projects/jetour-dynamic-password/
